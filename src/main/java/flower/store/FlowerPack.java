@@ -12,7 +12,7 @@ public class FlowerPack {
     /**
      * numbers of flowers.
      */
-    private int amount;
+    private Integer amount;
 
     /**
      * constuctor for flower and quantity.
