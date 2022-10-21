@@ -17,8 +17,8 @@ public class FlowerPack {
     /**
      * constuctor for flower and quantity.
      */
-    public FlowerPack(Flower flower, int quantity) {
-        setFlower(flower);
+    public FlowerPack(Flower flower_new, int quantity) {
+        setFlower(flower_new);
         setAmount(quantity);
     }
 
