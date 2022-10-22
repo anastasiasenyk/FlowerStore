@@ -1,3 +1,6 @@
+/**
+ * package flower.store
+ */
 package flower.store;
 
 import lombok.Getter;
@@ -16,6 +19,8 @@ public class FlowerPack {
 
     /**
      * constuctor for flower and quantity.
+     * @param flower1 - get param of type Flower
+     * @param quantity  - get int param of amount flowers in pack
      */
     public FlowerPack(final Flower flower1, final int quantity) {
         setFlower(flower1);
