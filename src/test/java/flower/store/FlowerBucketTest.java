@@ -8,24 +8,24 @@ import java.util.Random;
 
 public class FlowerBucketTest {
     /**
-    * create object of Random class
+    * create object of Random class.
     */
     private static final Random RANDOM_GENERATOR = new Random();
     /**
-     * magic number MAX_QUANTITY
+     * magic number MAX_QUANTITY.
      */
     private static final int MAX_QUANTITY = 1000;
     /**
-     * magic number MAX_PRICE
+     * magic number MAX_PRICE.
      */
     private static final int MAX_PRICE = 100;
     /**
-     * variable of class FlowerBucket
+     * variable of class FlowerBucket.
      */
     private FlowerBucket flowerBucket;
 
     /**
-     * function that runs before every method
+     * function that runs before every method.
      */
     @BeforeEach
     public void init() {
@@ -33,7 +33,7 @@ public class FlowerBucketTest {
     }
 
     /**
-     * tester for price
+     * tester for price.
      */
     @Test
     public void testPrice() {
