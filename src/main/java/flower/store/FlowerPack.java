@@ -15,7 +15,8 @@ public class FlowerPack {
     private int amount;
 
     /**
-     * constuctor for flower and quantity.
+     * constructor for flower and quantity.
+     *
      * @param flowerNew - get param of type Flower
      * @param quantity  - get int param of amount flowers in pack
      */
