@@ -13,8 +13,9 @@ public class FlowerBucket {
 
     /**
      * add pack of flower and their amount to the bucket.
+     * @param pack flower pack
      */
-    public void add(FlowerPack pack) {
+    public void add(final FlowerPack pack) {
         setPrice(pack.getAmount() * pack.getFlower().getPrice());
     }
 }
