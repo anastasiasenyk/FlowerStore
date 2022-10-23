@@ -62,10 +62,14 @@ public class StoreTest {
         store.addBucket(firstBucket);
         store.addBucket(secondBucket);
 
-        Assertions.assertTrue(store.search(firstFlower, firstQuantity * 2));
-        Assertions.assertTrue(store.search(secondFlower, secondQuantity));
-        Assertions.assertFalse(store.search(firstFlower, firstQuantity * 2 + 1));
-        Assertions.assertFalse(store.search(secondFlower, secondQuantity + 1));
+        Assertions.assertTrue(store.search(firstFlower,
+                firstQuantity * 2));
+        Assertions.assertTrue(store.search(secondFlower,
+                secondQuantity));
+        Assertions.assertFalse(store.search(firstFlower,
+                firstQuantity * 2 + 1));
+        Assertions.assertFalse(store.search(secondFlower,
+                secondQuantity + 1));
     }
 
 }
