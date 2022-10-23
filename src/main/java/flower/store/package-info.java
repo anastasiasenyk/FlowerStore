@@ -1,6 +1,6 @@
 /**
- * Domain classes used to produce flower store
- * These classes contain the flower properties
+ * Domain classes used to produce flower store.
+ * These classes contain the flower properties.
  *
  * @since 1.0
  * @author Anastasiia Senyk
