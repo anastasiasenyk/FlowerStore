@@ -39,9 +39,9 @@ public class StoreTest {
     @Test
     public void testSearch() {
         int firstPrice = RANDOM_GENERATOR.nextInt(MAX_PRICE);
-        int firstQuantity = RANDOM_GENERATOR.nextInt(MAX_QUANTITY)+1;
+        int firstQuantity = RANDOM_GENERATOR.nextInt(MAX_QUANTITY) + 1;
         int secondPrice = RANDOM_GENERATOR.nextInt(MAX_PRICE);
-        int secondQuantity = RANDOM_GENERATOR.nextInt(MAX_QUANTITY)+1;
+        int secondQuantity = RANDOM_GENERATOR.nextInt(MAX_QUANTITY) + 1;
 
         Flower firstFlower = new Rose();
         firstFlower.setPrice(firstPrice);
@@ -62,8 +62,10 @@ public class StoreTest {
         store.addBucket(firstBucket);
         store.addBucket(secondBucket);
 
-        Assertions.assertTrue(store.search(firstFlower, firstQuantity*2) & store.search(secondFlower, secondQuantity));
-        Assertions.assertFalse(store.search(firstFlower, firstQuantity*2+1) & store.search(secondFlower, secondQuantity+1));
+        Assertions.assertTrue(store.search(firstFlower, firstQuantity * 2));
+        Assertions.assertTrue(store.search(secondFlower, secondQuantity));
+        Assertions.assertFalse(store.search(firstFlower, firstQuantity * 2 + 1));
+        Assertions.assertFalse(store.search(secondFlower, secondQuantity + 1));
     }
 
 }

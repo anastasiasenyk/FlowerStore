@@ -14,22 +14,26 @@ public class Store {
 
     /**
      * add Bucket to the store.
+     * @param bucket bucket
      */
-    public void addBucket(FlowerBucket bucket){
+    public void addBucket(final FlowerBucket bucket) {
         store.add(bucket);
     }
 
     /**
      * search amount of needed flowers in store.
+     * @return boolean - if amount of needed flowers are in the store
+     * @param amount amount of needed flowers
+     * @param flower flower of neede type
      */
-    public boolean search(Flower flower, int amount){
+    public boolean search(final Flower flower, final int amount) {
         int counter = 0;
-        for (FlowerBucket bucket: store){
-            for (FlowerPack pack: bucket.getBucket()){
+        for (FlowerBucket bucket: store) {
+            for (FlowerPack pack: bucket.getBucket()) {
                 if (pack.getFlower().getFlowerType() == flower.getFlowerType()){
                     counter += pack.getAmount();
                 }
-                if (counter >= amount){
+                if (counter >= amount) {
                     return true;
                 }
             }
