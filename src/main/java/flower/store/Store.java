@@ -30,7 +30,7 @@ public class Store {
         int counter = 0;
         for (FlowerBucket bucket: store) {
             for (FlowerPack pack: bucket.getBucket()) {
-                if (pack.getFlower().getFlowerType() == flower.getFlowerType()){
+                if (pack.getFlower().getFlowerType() == flower.getFlowerType()) {
                     counter += pack.getAmount();
                 }
                 if (counter >= amount) {
